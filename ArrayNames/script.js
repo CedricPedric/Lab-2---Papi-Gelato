@@ -25,7 +25,16 @@ while (true){
                 i += 1
             }
         }
-        document.write(c)
+
+        const names = document.createElement("h2");
+        names.appendChild(document.createTextNode("De ingevoerde namen in de array zijn:"))
+        document.body.appendChild(names);
+        document.write(c + ".");
+
+        const namesReversed = document.createElement("h2");
+        namesReversed.appendChild(document.createTextNode("De ingevoerde namen in de array in omgekeerde volgorde zijn:"))
+        document.body.appendChild(namesReversed);
+        document.write(c.reverse() + ".");
         break
     }
 } 
