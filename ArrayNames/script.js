@@ -9,7 +9,6 @@ function IsTheInputValid(givenPrompt){
     return(false)
 }
 
-var loop = true
 while (true){
     let a = prompt("Hoeveel namen wilt u in de array stoppen?")
     if (IsTheInputValid(a) == false){}
